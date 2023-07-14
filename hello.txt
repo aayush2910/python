@@ -1,0 +1,7 @@
+hello is a text file 
+this is second line of text file 
+my self aayush fulara 
+and Im learning python these days 
+my_file= open(hello.txt)
+#opening the hello world txt document
+my_file.read()
