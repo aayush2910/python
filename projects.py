@@ -121,46 +121,84 @@
 
 #THIS IS THE ROCK, PAPER AND SCIESOR GAME
 
-from random import randint
+# from random import randint
 
-print("Opponent's turn: Rock(R) , Paper(P) and Sciesor(S) :  \n")
-rand_no= randint(1,3)
-if rand_no == 1:
-    Opponent ='R'
-elif rand_no==2:
-    Opponent='S'
-else :
-    Opponent = 'P'
+# print("Opponent's turn: Rock(R) , Paper(P) and Sciesor(S) :  \n")
+# rand_no= randint(1,3)
+# if rand_no == 1:
+#     Opponent ='R'
+# elif rand_no==2:
+#     Opponent='S'
+# else :
+#     Opponent = 'P'
 
-you=input("Your turn :\nRock(R) \nPaper(P) \nSciesor(S) : \n ")
+# you=input("Your turn :\nRock(R) \nPaper(P) \nSciesor(S) : \n ")
 
-def win_or_lose(player_1,your_guess):
-    if player_1 == your_guess:
-        print('Match is tie!')
-    elif (player_1=='R'):
-        if your_guess == 'S':
-            print ('You lose! ')
-        elif your_guess == 'P':
-            print ("Congratulations You won!")
-    elif player_1 == 'P':
-        if your_guess == 'R':
-            print ('You lose! ')
-        elif your_guess == 'S':
-            print ("Congratulations You won!")
-    elif player_1 == 'S':#scissor case
-        if your_guess == 'P':
-            print ('You lose! ')
-        elif your_guess == 'R':
-            print ("Congratulations You won!")
+# def win_or_lose(player_1,your_guess):
+#     if player_1 == your_guess:
+#         print('Match is tie!')
+#     elif (player_1=='R'):
+#         if your_guess == 'S':
+#             print ('You lose! ')
+#         elif your_guess == 'P':
+#             print ("Congratulations You won!")
+#     elif player_1 == 'P':
+#         if your_guess == 'R':
+#             print ('You lose! ')
+#         elif your_guess == 'S':
+#             print ("Congratulations You won!")
+#     elif player_1 == 'S':#scissor case
+#         if your_guess == 'P':
+#             print ('You lose! ')
+#         elif your_guess == 'R':
+#             print ("Congratulations You won!")
 
-print(f"\nOpponent choose :{Opponent} ")
-print(f"you choose :{you}\n")
+# print(f"\nOpponent choose :{Opponent} ")
+# print(f"you choose :{you}\n")
 
-win_or_lose(Opponent,you)
+# win_or_lose(Opponent,you)
+
+# def my_sum(a,b,c=0):   this is for limited no. of addition
+#     return sum((a,b,c))
+
+# a= my_sum(2,5,8)
+# print(a)
+
+# now for if we not know the no. of arguments to be pass
+#*args---?
+# def my_sum(*no):
+#     return sum(no)
+
+# a=my_sum(2,5,3,7,3)
+# print(a)
+
+# def hell(*h):
+#     print(f"list is {list(h)}")
+#     print(f"tuple is {tuple(h)}")
+#     print(f"set is {set(h)}")
+# hell(6,5,4,3,5,5)
 
 
+#here i tell  you about max min abs (absolute value) modulus (%)
 
+# A = 30
+# B = 45
+# C = 36
 
+#Output the maximum value of A, B, C
+#print(max(A, B, C))
 
+#Output the minimum value of A, B, C
+#print(min(A, B, C))
 
+#Output the absolute value of the difference of A and C
+#print(abs(A - C))
 
+#Output the absolute value of the difference of C and A
+#print(abs(C - A))
+
+#D = 6
+#E = 9
+#Output the remainder when A is divided by D and E
+#print(A % D)
+#print(A % E)

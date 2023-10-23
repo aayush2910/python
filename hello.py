@@ -34,31 +34,3 @@
 #     else:
 #         print(r)
 
-
-from random import randint
-
-random_no = randint
-
-count =0
-a=int(input("Enter the lower range: "))
-b=int(input("Enter the upper range: "))
-
-print('Random number is:',randint(a,b))
-
-guess = int(input("Guess the no.:"))
-
-
-def guess_user(guess,count):
-    if guess > random_no:
-        print("Try Again! You guessed too high.")
-    elif guess < random_no:
-        print("Try Again! You guessed too low.")
-    else:
-        print("correct")
-        count+=1
-        print("count",count)
-    return count
-     
-
-
-count = guess_user(guess,count)
